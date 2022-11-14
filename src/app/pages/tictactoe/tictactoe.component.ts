@@ -83,21 +83,6 @@ export class TictactoeComponent implements OnInit {
     }
   }
 
-  clickPreview(id: number): void {
-    let quadrado;
-    quadrado = $(`#btn-${id}`);
-    quadrado.html(this.isntCross ? 'x' : 'o');
-    this.isntCross
-      ? quadrado.css({ color: 'lightgreen' })
-      : quadrado.css({ color: 'yellow' });
-  }
-
-  resetPreview(id: number): void {
-    let quadrado;
-    quadrado = $(`#btn-${id}`);
-    quadrado.html('')
-  }
-
   resetGame() {
     this.values = [];
     this.posicoes = [];
