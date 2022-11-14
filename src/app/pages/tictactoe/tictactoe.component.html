@@ -1,0 +1,59 @@
+<body>
+  <div class="container">
+    <div
+      class="title"
+      style="display: flex; justify-content: space-evenly; align-items: center"
+    >
+      <h2>Jogo da Velha</h2>
+      <button class="back-btn" routerLink="/" type="button">Voltar</button>
+    </div>
+
+    <div class="line">
+      <div class="sq">
+        <button id="btn-1" (click)="enterValue(1)"></button>
+      </div>
+      <div class="sq">
+        <button id="btn-2" (click)="enterValue(2)"></button>
+      </div>
+      <div class="sq">
+        <button id="btn-3" (click)="enterValue(3)"></button>
+      </div>
+    </div>
+    <div class="line">
+      <div class="sq">
+        <button id="btn-4" (click)="enterValue(4)"></button>
+      </div>
+      <div class="sq">
+        <button id="btn-5" (click)="enterValue(5)"></button>
+      </div>
+      <div class="sq">
+        <button id="btn-6" (click)="enterValue(6)"></button>
+      </div>
+    </div>
+    <div class="line">
+      <div class="sq">
+        <button
+          id="btn-7"
+          style="border-bottom: none"
+          (click)="enterValue(7)"
+        ></button>
+      </div>
+      <div class="sq">
+        <button
+          id="btn-8"
+          style="border-bottom: none"
+          (click)="enterValue(8)"
+        ></button>
+      </div>
+      <div class="sq">
+        <button
+          id="btn-9"
+          style="border-bottom: none"
+          (click)="enterValue(9)"
+        ></button>
+      </div>
+    </div>
+    <button class="reset-btn" (click)="resetGame()">Resetar</button>
+    <h3 id="vencedor"></h3>
+  </div>
+</body>

@@ -1,0 +1,29 @@
+<div style="display: flex; justify-content: center; align-items: center;">
+  <h2>
+    Lista de afazeres
+  </h2>
+  <button class="back-btn" routerLink="/" type="button">Voltar</button>
+</div>
+
+<div class="container">
+  <h3>Adicionar Item</h3>
+  <input type="text" id="add-item-text" #todo />
+  <button class="add-btn" (click)="addToList(todo.value)">+</button>
+  <div class="items">
+    <h4>Lista de Itens</h4>
+    <div *ngFor="let item of dadosItens">
+      <input
+        type="text"
+        value="{{ item.descricao }}"
+        (input)="editItem(item.id, newValue.value)"
+        #newValue
+      />
+      <button class="del-btn" (click)="deleteItem(item.id, item.descricao)">
+        X
+      </button>
+    </div>
+    <small *ngIf="dadosItens.length <= 0" style="color: #616060"
+      >Nada encontrado.</small
+    >
+  </div>
+</div>

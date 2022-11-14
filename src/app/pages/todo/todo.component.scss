@@ -1,0 +1,47 @@
+input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #d1d1d1;
+  border-radius: 2px;
+  padding: 4px;
+  color: #fff;
+  width: 260px;
+}
+
+input:focus {
+  outline: none;
+}
+
+.container {
+  margin: auto;
+  padding: 12px;
+  border: 1px solid #d1d1d1;
+  border-radius: 16px;
+  width: 20%;
+}
+
+.items {
+  margin: 16px;
+}
+
+.add-btn, .del-btn {
+  cursor: pointer;
+  border: none;
+  margin: 4px;
+  background-color: transparent;
+}
+
+.add-btn {
+  color: rgb(89, 189, 89);
+  border-radius: 16px;
+  font-size: 24px;
+}
+
+.del-btn {
+  color: rgb(243, 61, 61);
+  padding: 6px;
+}
+
+
+
+
